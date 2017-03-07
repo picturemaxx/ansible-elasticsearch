@@ -1,2 +1,2 @@
 ---
-- src: https://github.com/picturemaxx/ansible-java.git 
+- src: geerlingguy.java 
