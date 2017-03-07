@@ -6,11 +6,11 @@
 
 - name: Add Elasticsearch repository.
   apt_repository:
-    repo: 'deb http://packages.elastic.co/elasticsearch/2.x/debian stable main'
+    repo: 'deb http://packages.elastic.co/elasticsearch/5.x/debian stable main'
     state: present
     update_cache: yes
 
 - name: Install Elasticsearch.
   apt:
-    pkg: elasticsearch
+    pkg: elasticsearch=5.2.2
     state: present

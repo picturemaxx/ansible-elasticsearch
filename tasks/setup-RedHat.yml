@@ -12,5 +12,5 @@
 
 - name: Install Elasticsearch.
   yum:
-    pkg: elasticsearch
+    pkg: elasticsearch=5.2.2
     state: installed
