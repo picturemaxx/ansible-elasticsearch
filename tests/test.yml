@@ -15,5 +15,5 @@
         state: present
 
   roles:
-    -geerlingguy.java 
+    - geerlingguy.java 
     - role_under_test
