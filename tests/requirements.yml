@@ -1,2 +1,3 @@
 ---
-- src: git+https://github.com/picturemaxx/ansible-java.git 
+- src: https://github.com/picturemaxx/ansible-java/archive/master.tar.gz
+  name: ansible-java
