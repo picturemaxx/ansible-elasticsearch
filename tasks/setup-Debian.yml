@@ -19,10 +19,3 @@
   apt:
     pkg: elasticsearch=5.2.2
     state: present
-
-- name: set vm.max_map_count
-  lineinfile:
-    dest: /etc/sysctl.conf
-    line: 'vm.max_map_count=262144'
-    state: present
-
