@@ -15,5 +15,5 @@
         state: present
 
   roles:
-    - geerlingguy.java 
+    - https://github.com/picturemaxx/ansible-java.git       
     - role_under_test

@@ -6,7 +6,7 @@ An Ansible Role that installs Elasticsearch on RedHat/CentOS or Debian/Ubuntu.
 
 ## Requirements
 
-Requires at least Java 7 (Java 8+ preferred). See [`geerlingguy.java`](https://github.com/geerlingguy/ansible-role-java#example-playbook-install-openjdk-8) role instructions for installing OpenJDK 8.
+Requires Java 8. See [`ansible-java`](https:////github.com/picturemaxx/ansible-java.git).
 
 ## Role Variables
 Available variables are listed below, along with default values (see `defaults/main.yml`):
@@ -26,14 +26,14 @@ Whether to allow inline scripting against ElasticSearch. You should read the fol
 
 ## Dependencies
 
-  - geerlingguy.java
+  - https://github.com/picturemaxx/ansible-java.git
 
 ## Example Playbook
 
     - hosts: search
       roles:
-        - geerlingguy.java
-        - geerlingguy.elasticsearch
+        - https://github.com/picturemaxx/ansible-java.git 
+        - ansible-elasticsearch
 
 ## License
 
@@ -42,3 +42,5 @@ MIT / BSD
 ## Author Information
 
 This role was created in 2014 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+
+Tobias Kramheller @tkramheller

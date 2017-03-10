@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - geerlingguy.java
+  - https://github.com/picturemaxx/ansible-java.git 
 
 galaxy_info:
   author: geerlingguy
