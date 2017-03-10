@@ -15,5 +15,5 @@
         state: present
 
   roles:
-    - https://github.com/picturemaxx/ansible-java.git       
+    - https://github.com/picturemaxx/ansible-java       
     - role_under_test
