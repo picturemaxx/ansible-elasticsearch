@@ -1,2 +1,2 @@
 ---
-- src: https://github.com/picturemaxx/ansible-java 
+- src: git+https://github.com/picturemaxx/ansible-java.git 
