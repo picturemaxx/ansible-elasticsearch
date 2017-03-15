@@ -14,8 +14,23 @@
     mode: 0750
   notify: restart elasticsearch
 
+- name: Copy log4j2.properties
+  copy:
+    src: log4j2.properties
+    dest: /etc/elasticsearch/log4j2.properties
+    owner: root
+    group: elasticsearch
+    mode: 0750
+  notify: restart elasticsearch
+
 - name: Start Elasticsearch.
-  service: name=elasticsearch state=started enabled=yes
+  service:
+    name: elasticsearch
+    state: started
 
 - name: Make sure Elasticsearch is running before proceeding.
-  wait_for: host={{ elasticsearch_network_host }} port={{ elasticsearch_http_port }} delay=3 timeout=300
+  wait_for:
+    host: "{{ elasticsearch_network_host }}"
+    port: "{{ elasticsearch_http_port }}"
+    delay: 3 
+    timeout: 300

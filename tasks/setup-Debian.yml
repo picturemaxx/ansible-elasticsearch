@@ -1,4 +1,9 @@
 ---
+- name: Ensure dependency is installed (Ubuntu).
+  apt:
+    name: apt-transport-https
+    state: present
+
 - name: Add Elasticsearch apt key.
   apt_key:
     url: https://packages.elastic.co/GPG-KEY-elasticsearch
@@ -6,9 +11,11 @@
 
 - name: Add Elasticsearch repository.
   apt_repository:
-    repo: 'deb http://packages.elastic.co/elasticsearch/2.x/debian stable main'
+    repo: 'deb https://artifacts.elastic.co/packages/5.x/apt stable main'
     state: present
     update_cache: yes
 
 - name: Install Elasticsearch.
-  apt: pkg=elasticsearch state=present
+  apt:
+    pkg: elasticsearch=5.2.2
+    state: present
