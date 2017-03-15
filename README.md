@@ -1,12 +1,14 @@
 # Ansible Role: Elasticsearch
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-elasticsearch.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-elasticsearch)
+[![Build Status](https://travis-ci.org/picturemaxx/ansible-elasticsearch.svg?branch=master)](https://travis-ci.org/picturemaxx/ansible-elasticsearch)
 
 An Ansible Role that installs Elasticsearch on RedHat/CentOS or Debian/Ubuntu.
 
 ## Requirements
 
+
 Requires Java 8. See [`ansible-java`](https:////github.com/picturemaxx/ansible-java.git).
+
 
 ## Role Variables
 Available variables are listed below, along with default values (see `defaults/main.yml`):
@@ -26,13 +28,15 @@ Whether to allow inline scripting against ElasticSearch. You should read the fol
 
 ## Dependencies
 
+
   - https://github.com/picturemaxx/ansible-java.git
+
 
 ## Example Playbook
 
     - hosts: search
       roles:
-        - https://github.com/picturemaxx/ansible-java.git 
+        - ansible-java
         - ansible-elasticsearch
 
 ## License
